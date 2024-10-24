@@ -1,0 +1,53 @@
+{% extends 'partials/base.html' %}
+{% block title %} Book Home {% endblock %}
+
+{% block content %}
+
+ <!--Table-->
+ <div class="container">
+   <div class="row my-4">
+       <div class="col-md-4"></div>
+       <div class="col-md-8">
+           <table class="table bg-white">
+               <thead style="background-color: rgb(108, 11, 11);">
+                   <tr class="text-white" style="background-color: rgb(108, 11, 11);">
+                                             
+                       <th scope="col" style="background-color: rgb(108, 11, 11);">Handle</th>
+                       <th scope="col" style="background-color: rgb(108, 11, 11);">Last</th>
+                       <th scope="col" style="background-color: rgb(108, 11, 11);">First</th>
+                       <th scope="col" style="background-color: rgb(108, 11, 11);">#</th>
+                   </tr>
+               </thead>
+               <tbody>
+
+                   <tr>
+                     <td>@fat</td>
+                       <td>Jacob</td>
+                       <td>Thornton</td>
+                       <th scope="row"><a class="btn btn-info btn-sm" style="background-color: rgb(108, 11, 11);" href="">View</a></th>
+                   </tr>
+                   <tr>
+                     <td>@twitter</td>
+                       <td>Larry</td>
+                       <td>the Bird</td>
+                       <th scope="row"><a class="btn btn-info btn-sm" style="background-color: rgb(108, 11, 11);" href="">View</a></th>
+                   </tr>
+                   <tr>
+                     <td>@mdo</td>
+                     <td>Mark</td>
+                     <td>Otto</td>
+                     <th scope="row"><a class="btn btn-info btn-sm" style="background-color: rgb(108, 11, 11);" href="">View</a></th>
+                 </tr>
+               </tbody>
+           </table>
+       </div>
+   </div>
+
+</div>
+
+
+
+<!--End Table-->
+
+
+{% endblock %}

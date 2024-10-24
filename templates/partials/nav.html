@@ -1,0 +1,33 @@
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg" style="background-color: rgb(108, 11, 11);">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Logout</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="profile.html"> Admin Profile </a>
+                    </li>
+                </ul>
+z
+
+            </div>
+
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="{% url 'index-dashboard' %}">Dashboard </a>
+                </li>
+            </ul>
+
+            <a class="navbar-brand text-white" href="{% url 'index-dashboard' %}">BeFiter</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        
+
+           </div>
+    </nav>
+    <!--End Navbar-->

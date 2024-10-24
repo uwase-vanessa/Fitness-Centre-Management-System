@@ -1,0 +1,92 @@
+{% extends 'partials/base.html' %}
+{% block title %} Customer Home {% endblock %}
+
+{% block content %}
+
+ <!--Table-->
+ <div class="container">
+<div class="row my-4">
+        <div class="col-md-8">
+            <table class="table bg-white">
+                <thead class="bg-info">
+                    <tr class="text-white">
+                        <th scope="col" class="text-white" style="background-color: rgb(108, 11, 11);">Activity</th>
+                        <th scope="col" class="text-white" style="background-color: rgb(108, 11, 11);">Hours</th>
+                        <th scope="col" class="text-white" style="background-color: rgb(108, 11, 11);">Category</th>
+                        <th scope="col" class="text-white" style="background-color: rgb(108, 11, 11);">Name</th>
+                        <th scope="col" class="text-white" style="background-color: rgb(108, 11, 11);">Id</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a class="btn btn-info btn-sm" href="" style="background-color: rgb(10, 80, 39)";>Edit</a>
+                            <a class="btn btn-danger btn-sm" href="">Delete</a>
+                        </td>
+                        <td>@mdo</td>
+                        <td>Otto</td>
+                        <td>Mark</td>
+                        <th scope="row">1</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="btn btn-info btn-sm" href="" style="background-color: rgb(10, 80, 39)";>Edit</a>
+                            <a class="btn btn-danger btn-sm" href="">Delete</a>
+                        </td>
+                        <td>@mdo</td>
+                        <td>Otto</td>
+                        <td>Mark</td>
+                        <th scope="row">2</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="btn btn-info btn-sm" href="" style="background-color: rgb(10, 80, 39)";>Edit</a>
+                            <a class="btn btn-danger btn-sm" href="">Delete</a>
+                        </td>
+                        <td>@mdo</td>
+                        <td>Otto</td>
+                        <td>Mark</td>
+                        <th scope="row">3</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="border bg-white p-3">
+                <h4>Add Customer</h4>
+                <hr>
+                <form action="">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Hours</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-group ">
+                        <label for="inputState">Category</label>
+                        <select id="inputState" class="form-control">
+                            <option selected> .....Choose your Category</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+        
+                    <input class="btn btn-success btn-block" style="background-color: rgb(10, 80, 39)" type="submit" value="Add Customer">
+                </form>
+            </div>
+        </div>
+        
+
+        
+    </div>
+
+</div>
+
+
+
+<!--End Table-->
+
+
+{% endblock %}
